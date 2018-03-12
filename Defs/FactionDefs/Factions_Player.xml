@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FactionDef Abstract="True" Name="PlayerFactionBase">
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+   <FactionDef ParentName="PlayerFactionBase">
+    <defName>PlayerColonyDontKnow</defName>
+    <label>New Arrivals</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Colonist</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Industrial</techLevel>
+    <backstoryCategory>Civil</backstoryCategory>
+    <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
+		<baseNameMaker>NamerFactionBasePlayerColony</baseNameMaker>
+		<baseNameMakerPlayer>NamerFactionPlayerColonyRandomized</baseNameMakerPlayer>
+		<factionNameMakerPlayer>NamerFactionBasePlayerColonyRandomized</factionNameMakerPlayer>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>ClassicStartNone</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+  
+
+</Defs>
